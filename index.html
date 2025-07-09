@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adem Montres & Lunettes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom right, #f4f1ee, #e5dfd9);
+      color: #2c2c2c;
+    }
+    header {
+      background-color: #2d2a26;
+      color: #f9f6f2;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #3a3732;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+    }
+    nav .links {
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #5a534a;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+    .language-toggle {
+      background-color: #5a534a;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1516728778615-2d590ea1856f') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background-color: #2d2a26;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .buy-button:hover {
+      background-color: #4e4840;
+    }
+    footer {
+      background-color: #2d2a26;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Adem Montres & Lunettes
+  </header>
+  <nav>
+    <div class="links">
+      <a href="#home" id="nav-home">الرئيسية</a>
+      <a href="#products" id="nav-products">المنتجات</a>
+    </div>
+    <div class="language-toggle" onclick="toggleLanguage()">English</div>
+  </nav>
+  <div class="hero">
+    <h1 id="hero-text">اكتشف الفخامة في كل نظرة وكل لحظة</h1>
+  </div>
+  <div id="products" class="section">
+    <h2 id="section-title">منتجاتنا المختارة</h2>
+    <div class="products">
+      <div class="product">
+        <img src="1.jpg" alt="نظارات شمسية سوداء">
+        <h3 id="prod1-title">نظارات رايبان سوداء</h3>
+        <p id="prod1-desc">نظارات شمسية بتصميم كلاسيكي أنيق</p>
+        <p><strong id="price-label1">السعر:</strong> 4500 دج</p>
+        <a class="buy-button" href="https://wa.me/213557287895?text=أرغب%20في%20شراء%20نظارات%20رايبان%20سوداء" id="buy1">اطلب الآن</a>
+      </div>
+      <div class="product">
+        <img src="2.jpg" alt="نظارات شمسية بعدسة فاتحة">
+        <h3 id="prod2-title">نظارات رايبان بعدسة فاتحة</h3>
+        <p id="prod2-desc">عدسات مريحة وشفافة لإطلالة مميزة</p>
+        <p><strong id="price-label2">السعر:</strong> 4300 دج</p>
+        <a class="buy-button" href="https://wa.me/213557287895?text=أرغب%20في%20شراء%20نظارات%20رايبان%20فاتحة" id="buy2">اطلب الآن</a>
+      </div>
+      <div class="product">
+        <img src="3.jpg" alt="نظارات شمسية زرقاء">
+        <h3 id="prod3-title">نظارات رايبان زرقاء</h3>
+        <p id="prod3-desc">إطلالة عصرية بعدسات داكنة</p>
+        <p><strong id="price-label3">السعر:</strong> 4700 دج</p>
+        <a class="buy-button" href="https://wa.me/213557287895?text=أرغب%20في%20شراء%20نظارات%20رايبان%20زرقاء" id="buy3">اطلب الآن</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 adem_montres_lunettes_stor - جميع الحقوق محفوظة. للتواصل: +213557287895
+  </footer>
+
+  <script>
+    let isArabic = true;
+    function toggleLanguage() {
+      isArabic = !isArabic;
+      document.documentElement.lang = isArabic ? "ar" : "en";
+      document.documentElement.dir = isArabic ? "rtl" : "ltr";
+      document.querySelector('.language-toggle').innerText = isArabic ? 'English' : 'العربية';
+
+      // Navigation
+      document.getElementById("nav-home").innerText = isArabic ? "الرئيسية" : "Home";
+      document.getElementById("nav-products").innerText = isArabic ? "المنتجات" : "Products";
+
+      // Hero
+      document.getElementById("hero-text").innerText = isArabic ? "اكتشف الفخامة في كل نظرة وكل لحظة" : "Discover elegance in every look and every moment";
+
+      // Section
+      document.getElementById("section-title").innerText = isArabic ? "منتجاتنا المختارة" : "Our Featured Products";
+
+      // Product 1
+      document.getElementById("prod1-title").innerText = isArabic ? "نظارات رايبان سوداء" : "Black Ray-Ban Sunglasses";
+      document.getElementById("prod1-desc").innerText = isArabic ? "نظارات شمسية بتصميم كلاسيكي أنيق" : "Classic and stylish black lens design";
+      document.getElementById("price-label1").innerText = isArabic ? "السعر:" : "Price:";
+      document.getElementById("buy1").innerText = isArabic ? "اطلب الآن" : "Order Now";
+
+      // Product 2
+      document.getElementById("prod2-title").innerText = isArabic ? "نظارات رايبان بعدسة فاتحة" : "Light Lens Ray-Ban";
+      document.getElementById("prod2-desc").innerText = isArabic ? "عدسات مريحة وشفافة لإطلالة مميزة" : "Comfortable and stylish with clear lenses";
+      document.getElementById("price-label2").innerText = isArabic ? "السعر:" : "Price:";
+      document.getElementById("buy2").innerText = isArabic ? "اطلب الآن" : "Order Now";
+
+      // Product 3
+      document.getElementById("prod3-title").innerText = isArabic ? "نظارات رايبان زرقاء" : "Blue Ray-Ban Sunglasses";
+      document.getElementById("prod3-desc").innerText = isArabic ? "إطلالة عصرية بعدسات داكنة" : "Trendy look with dark blue lenses";
+      document.getElementById("price-label3").innerText = isArabic ? "السعر:" : "Price:";
+      document.getElementById("buy3").innerText = isArabic ? "اطلب الآن" : "Order Now";
+    }
+  </script>
+</body>
+</html>
